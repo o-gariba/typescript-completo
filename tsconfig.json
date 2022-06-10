@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        // onde vou gravar os arquivos resultantes?
+        "outDir": "app/dist/js",
+
+        // Quando compilar, transforme para o EcmaScript X
+        "target": "ES6",
+
+        // compile CASO NÃO TENHA NENHUM ERRO!
+        "noEmitOnError": true,
+
+        // não colocar tipo any em variaveis
+        "noImplicitAny": true,
+
+        "removeComments": true,
+
+        // Forçar o dev a desenvolver soluções para trabalhar com entradas null
+        "strictNullChecks": true,
+
+        // Ativa os decorators ao redor do código
+        "experimentalDecorators": true,
+
+        // Para debugar e achar qual linha parei no ts. NÃO FAZER ISSO PARA CÓDIGO EM PRODUÇÃO!!
+        "sourceMap": true
+    },
+    // Compile para JS os arquivos TSs que estejam em
+    "include": [
+        "app/src/**/*"
+    ]
+}
